@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe PeopleController, type: :controller do
+  let(:person) do
+    Person.new(first_name: 'Alice', last_name: 'Smith')
+  end
 
   # This should return the minimal set of attributes required to create a valid
   # Person. As you add validations to Person, be sure to
